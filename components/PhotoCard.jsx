@@ -15,10 +15,12 @@ function PhotoCard({ photo }) {
             <Text style={photoCardStyles.location}>San Francisco</Text>
           </View>
         </View>
-        <Icon name='code' />
+        <Icon name='more-vert' />
       </View>
 
-      <Image source={{ uri: BASE_URI + photo.id }} containerStyle={photoCardStyles.image} PlaceholderContent={<ActivityIndicator />} />
+      <Image source={{ uri: BASE_URI + photo.id }} 
+          containerStyle={photoCardStyles.image} 
+          PlaceholderContent={<ActivityIndicator />} />
       <Text style={photoCardStyles.cardText}>The idea with React Native Elements is more about component structure than actual design.</Text>
       <Card.Divider />
     </View>

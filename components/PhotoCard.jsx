@@ -1,5 +1,5 @@
-import { Card, Text, Image, Avatar, Icon } from '@rneui/themed'
-import { View, ActivityIndicator } from 'react-native'
+import { Card, Text, Avatar, Icon } from '@rneui/themed'
+import { View, ActivityIndicator, Image } from 'react-native'
 
 import { photoCardStyles } from '../assets/styles'
 
@@ -19,7 +19,7 @@ function PhotoCard({ photo }) {
       </View>
 
       <Image source={{ uri: BASE_URI + photo.id }} 
-          containerStyle={photoCardStyles.image} 
+          style={photoCardStyles.image} 
           PlaceholderContent={<ActivityIndicator />} />
       <Text style={photoCardStyles.cardText}>The idea with React Native Elements is more about component structure than actual design.</Text>
       <Card.Divider />
